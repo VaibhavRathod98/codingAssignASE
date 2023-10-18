@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <h2>Calculator</h2>
+        <input type="text" id="display" readonly>
+        <button class="clear" onclick="clearDisplay()">AC</button>
+        <br>
+        <button id="numbers" onclick="appendToDisplay('7')">7</button>
+        <button id="numbers" onclick="appendToDisplay('8')">8</button>
+        <button id="numbers" onclick="appendToDisplay('9')">9</button>
+        <button class="symbols" onclick="appendToDisplay('+')">+</button>
+        <br>
+        <button id="numbers" onclick="appendToDisplay('4')">4</button>
+        <button id="numbers" onclick="appendToDisplay('5')">5</button>
+        <button id="numbers" onclick="appendToDisplay('6')">6</button>
+        <button class="symbols" onclick="appendToDisplay('-')">-</button>
+        <br>
+        <button id="numbers" onclick="appendToDisplay('1')">1</button>
+        <button id="numbers" onclick="appendToDisplay('2')">2</button>
+        <button id="numbers" onclick="appendToDisplay('3')">3</button>
+        <button class="symbols" onclick="appendToDisplay('*')">*</button>
+        <br>
+        <button id="numbers" onclick="appendToDisplay('.')">.</button>
+        <button id="numbers" onclick="appendToDisplay('0')">0</button>
+        <button class="symbols" onclick="calculateResult()">=</button>
+        <button class="symbols" onclick="appendToDisplay('/')">/</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
